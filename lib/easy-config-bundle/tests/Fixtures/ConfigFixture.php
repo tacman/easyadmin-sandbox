@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyConfigBundle\Fixtures;
+namespace Adeliom\EasyConfigBundle\Tests\Fixtures;
 
-use App\Entity\EasyConfig\Config;
+use Adeliom\EasyConfigBundle\Entity\Config;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 

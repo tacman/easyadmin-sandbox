@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyConfigBundle\Controller;
+namespace Adeliom\EasyConfigBundle\Tests\Controller;
 
 use Adeliom\EasyConfigBundle\Controller\Admin\EasyConfigCrudController;
 use Adeliom\EasyConfigBundle\Entity\Config;

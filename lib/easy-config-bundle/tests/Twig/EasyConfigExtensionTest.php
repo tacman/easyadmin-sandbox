@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyConfigBundle\Twig;
+namespace Adeliom\EasyConfigBundle\Tests\Twig;
 
 use Adeliom\EasyConfigBundle\Twig\EasyConfigExtension;
-use App\Tests\EasyConfigBundle\DatabaseSetupTrait;
-use App\Tests\EasyConfigBundle\Fixtures\ConfigFixture;
+use Adeliom\EasyConfigBundle\Tests\DatabaseSetupTrait;
+use Adeliom\EasyConfigBundle\Tests\Fixtures\ConfigFixture;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 use Twig\Environment;

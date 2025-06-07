@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyConfigBundle\Repository;
+namespace Adeliom\EasyConfigBundle\Tests\Repository;
 
-use App\Tests\EasyConfigBundle\DatabaseSetupTrait;
-use App\Tests\EasyConfigBundle\Fixtures\ConfigFixture;
+use Adeliom\EasyConfigBundle\Tests\DatabaseSetupTrait;
+use Adeliom\EasyConfigBundle\Tests\Fixtures\ConfigFixture;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
