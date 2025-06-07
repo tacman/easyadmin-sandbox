@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyMenu\Controller;
+namespace Adeliom\EasyMenuBundle\Tests\Controller;
 
 use Adeliom\EasyMenuBundle\Controller\MenuCrudController;
-use App\Entity\EasyMenu\Menu;
+use Adeliom\EasyMenuBundle\Entity\MenuEntity;
 use PHPUnit\Framework\TestCase;
 
 final class MenuCrudControllerTest extends TestCase
@@ -14,7 +14,7 @@ final class MenuCrudControllerTest extends TestCase
         $controller = new class() extends MenuCrudController {
             public static function getEntityFqcn(): string
             {
-                return Menu::class;
+                return MenuEntity::class;
             }
         };
 

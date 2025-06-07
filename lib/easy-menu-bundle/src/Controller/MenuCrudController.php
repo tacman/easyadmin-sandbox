@@ -2,7 +2,7 @@
 
 namespace Adeliom\EasyMenuBundle\Controller;
 
-use App\Entity\EasyMenu\Menu;
+use Adeliom\EasyMenuBundle\Entity\EasyMenu\Menu;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Action;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Actions;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;

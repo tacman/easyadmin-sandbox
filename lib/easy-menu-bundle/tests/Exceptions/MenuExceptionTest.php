@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyMenu\Exceptions;
+namespace Adeliom\EasyMenuBundle\Tests\Exceptions;
 
 use Adeliom\EasyMenuBundle\Exceptions\MenuNotFoundException;
 use Adeliom\EasyMenuBundle\Exceptions\TemplateNotFoundException;

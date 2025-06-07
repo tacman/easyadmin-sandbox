@@ -37,6 +37,11 @@
             "Adeliom\\EasyMenuBundle\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Adeliom\\EasyMenuBundle\\Tests\\": "tests/"
+        }
+    },
     "minimum-stability": "dev",
     "repositories": [
         {

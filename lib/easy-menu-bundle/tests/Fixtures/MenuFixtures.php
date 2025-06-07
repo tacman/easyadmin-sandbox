@@ -1,24 +1,24 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyMenu\Fixtures;
+namespace Adeliom\EasyMenuBundle\Tests\Fixtures;
 
+use Adeliom\EasyCommonBundle\Enum\ThreeStateStatusEnum;
+use Adeliom\EasyMenuBundle\Entity\MenuEntity;
+use Adeliom\EasyMenuBundle\Entity\MenuItemEntity;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
-use App\Entity\EasyMenu\Menu;
-use App\Entity\EasyMenu\MenuItem;
-use Adeliom\EasyCommonBundle\Enum\ThreeStateStatusEnum;
 
 class MenuFixtures extends Fixture
 {
     public function load(ObjectManager $manager): void
     {
-        $menu = new Menu();
+        $menu = new MenuEntity();
         $menu->setCode('main');
         $menu->setName('Main menu');
         $menu->setStatus(true);
 
-        $item = new MenuItem();
+        $item = new MenuItemEntity();
         $item->setName('Home');
         $item->setUrl('/');
         $item->setMenu($menu);

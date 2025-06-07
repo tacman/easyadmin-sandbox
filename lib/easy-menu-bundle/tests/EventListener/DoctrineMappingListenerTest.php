@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyMenu\EventListener;
+namespace Adeliom\EasyMenuBundle\Tests\EventListener;
 
 use Adeliom\EasyMenuBundle\Entity\MenuEntity;
 use Adeliom\EasyMenuBundle\Entity\MenuItemEntity;

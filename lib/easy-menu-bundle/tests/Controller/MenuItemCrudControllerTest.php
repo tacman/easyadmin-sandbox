@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyMenu\Controller;
+namespace Adeliom\EasyMenuBundle\Tests\Controller;
 
 use Adeliom\EasyMenuBundle\Controller\MenuItemCrudController;
-use App\Entity\EasyMenu\MenuItem;
+use Adeliom\EasyMenuBundle\Entity\MenuItemEntity;
 use Doctrine\Persistence\ManagerRegistry;
 use PHPUnit\Framework\TestCase;
 
@@ -15,7 +15,7 @@ final class MenuItemCrudControllerTest extends TestCase
         $controller = new class($this->createStub(ManagerRegistry::class)) extends MenuItemCrudController {
             public static function getEntityFqcn(): string
             {
-                return MenuItem::class;
+                return MenuItemEntity::class;
             }
         };
 

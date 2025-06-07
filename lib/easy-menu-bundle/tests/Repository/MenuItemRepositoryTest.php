@@ -1,25 +1,25 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyMenu\Repository;
+namespace Adeliom\EasyMenuBundle\Tests\Repository;
 
-use App\Entity\EasyMenu\Menu;
-use App\Entity\EasyMenu\MenuItem;
-use App\Tests\EasyMenu\DoctrineOrmTestCase;
+use Adeliom\EasyMenuBundle\Tests\DoctrineOrmTestCase;
+use Adeliom\EasyMenuBundle\Entity\MenuEntity;
+use Adeliom\EasyMenuBundle\Entity\MenuItemEntity;
 
 final class MenuItemRepositoryTest extends DoctrineOrmTestCase
 {
     protected function getMetadata(): array
     {
         return [
-            $this->entityManager->getClassMetadata(Menu::class),
-            $this->entityManager->getClassMetadata(MenuItem::class),
+            $this->entityManager->getClassMetadata(MenuEntity::class),
+            $this->entityManager->getClassMetadata(MenuItemEntity::class),
         ];
     }
 
     public function testSetConfigUpdatesProperties(): void
     {
-        $repo = $this->entityManager->getRepository(MenuItem::class);
+        $repo = $this->entityManager->getRepository(MenuItemEntity::class);
         $repo->setConfig(['enabled' => true, 'ttl' => 1800]);
 
         $ref = new \ReflectionClass($repo);
