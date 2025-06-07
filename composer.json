@@ -172,7 +172,7 @@
             "@auto-scripts"
         ],
         "unit-tests": [
-            "php bin/phpunit"
+            "php bin/phpunit lib"
         ]
     },
     "extra": {
