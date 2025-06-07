@@ -1,14 +1,12 @@
 <?php
 
-namespace App\Tests\BlogBundle;
+namespace Adeliom\EasyBlogBundle\Tests;
 
-use Doctrine\Persistence\ConnectionRegistry;
-use Doctrine\Persistence\ManagerRegistry;
-use Doctrine\Persistence\ObjectManager;
-use Doctrine\Persistence\ObjectRepository;
 use Doctrine\DBAL\Connection;
-use Doctrine\Persistence\ObjectManager as DoctrineObjectManager;
 use Doctrine\ORM\EntityManagerInterface;
+use Doctrine\Persistence\ManagerRegistry;
+use Doctrine\Persistence\ObjectManager as DoctrineObjectManager;
+use Doctrine\Persistence\ObjectRepository;
 
 class SimpleManagerRegistry implements ManagerRegistry
 {

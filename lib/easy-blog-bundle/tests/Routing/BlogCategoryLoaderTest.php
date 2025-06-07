@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Tests\BlogBundle\Routing;
+namespace Adeliom\EasyBlogBundle\Tests\Routing;
 
 use Adeliom\EasyBlogBundle\Routing\BlogCategoryLoader;
-use App\Tests\BlogBundle\BlogTestCase;
+use Adeliom\EasyBlogBundle\Tests\BlogTestCase;
 use Symfony\Component\Routing\RouteCollection;
 
 class BlogCategoryLoaderTest extends BlogTestCase
 {
     public function testSupports(): void
     {
-        $repo = new \App\Repository\EasyBlog\CategoryRepository(new \App\Tests\BlogBundle\SimpleManagerRegistry($this->em));
+        $repo = new \Adeliom\EasyBlogBundle\Repository\CategoryRepository(new \Adeliom\EasyBlogBundle\Tests\SimpleManagerRegistry($this->em));
         $loader = new BlogCategoryLoader('Controller', '', $repo, ['root_path' => '/blog']);
         $this->assertTrue($loader->supports(null, 'easy_blog_category'));
         $this->assertFalse($loader->supports(null, 'foo'));
@@ -18,7 +18,7 @@ class BlogCategoryLoaderTest extends BlogTestCase
 
     public function testLoad(): void
     {
-        $repo = new \App\Repository\EasyBlog\CategoryRepository(new \App\Tests\BlogBundle\SimpleManagerRegistry($this->em));
+        $repo = new \Adeliom\EasyBlogBundle\Repository\CategoryRepository(new \Adeliom\EasyBlogBundle\Tests\SimpleManagerRegistry($this->em));
         $loader = new BlogCategoryLoader('Controller', '', $repo, ['root_path' => '/blog']);
         $collection = $loader->load([], 'easy_blog_category');
         $this->assertInstanceOf(RouteCollection::class, $collection);

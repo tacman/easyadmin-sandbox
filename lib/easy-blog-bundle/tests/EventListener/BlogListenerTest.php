@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Tests\BlogBundle\EventListener;
+namespace Adeliom\EasyBlogBundle\Tests\EventListener;
 
 use Adeliom\EasyBlogBundle\EventListener\BlogListener;
-use App\Tests\BlogBundle\BlogTestCase;
-use App\Tests\BlogBundle\SimpleManagerRegistry;
+use Adeliom\EasyBlogBundle\Tests\BlogTestCase;
+use Adeliom\EasyBlogBundle\Tests\SimpleManagerRegistry;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
+use Symfony\Component\HttpKernel\HttpKernelInterface;
 
 class BlogListenerTest extends BlogTestCase
 {
@@ -15,8 +15,8 @@ class BlogListenerTest extends BlogTestCase
     {
         $registry = new SimpleManagerRegistry($this->em);
         $listener = new BlogListener(
-            $registry->getRepository(\App\Entity\EasyBlog\Post::class),
-            $registry->getRepository(\App\Entity\EasyBlog\Category::class),
+            $registry->getRepository(\Adeliom\EasyBlogBundle\Entity\PostEntity::class),
+            $registry->getRepository(\Adeliom\EasyBlogBundle\Entity\CategoryEntity::class),
             ['root_path' => '/blog']
         );
 
@@ -34,8 +34,8 @@ class BlogListenerTest extends BlogTestCase
     {
         $registry = new SimpleManagerRegistry($this->em);
         $listener = new BlogListener(
-            $registry->getRepository(\App\Entity\EasyBlog\Post::class),
-            $registry->getRepository(\App\Entity\EasyBlog\Category::class),
+            $registry->getRepository(\Adeliom\EasyBlogBundle\Entity\PostEntity::class),
+            $registry->getRepository(\Adeliom\EasyBlogBundle\Entity\CategoryEntity::class),
             ['root_path' => '/blog']
         );
 

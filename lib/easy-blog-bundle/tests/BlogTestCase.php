@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Tests\BlogBundle;
+namespace Adeliom\EasyBlogBundle\Tests;
 
-use App\Tests\Fixtures\BlogFixtures;
+use Adeliom\EasyBlogBundle\EventListener\DoctrineMappingListener;
+use Adeliom\EasyMediaBundle\Types\EasyMediaType;
+use Adeliom\EasyBlogBundle\Entity\CategoryEntity;
+use Adeliom\EasyBlogBundle\Entity\PostEntity;
+use Adeliom\EasyBlogBundle\Tests\Fixtures\BlogFixtures;
 use Doctrine\DBAL\Types\Type;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Tools\SchemaTool;
 use Doctrine\ORM\Tools\Setup;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
-use Adeliom\EasyMediaBundle\Types\EasyMediaType;
-use Adeliom\EasyBlogBundle\EventListener\DoctrineMappingListener;
-use App\Entity\EasyBlog\Post;
-use App\Entity\EasyBlog\Category;
 
 abstract class BlogTestCase extends KernelTestCase
 {
@@ -35,7 +35,7 @@ abstract class BlogTestCase extends KernelTestCase
 
         $this->em->getEventManager()->addEventListener(
             \Doctrine\ORM\Events::loadClassMetadata,
-            new DoctrineMappingListener(Post::class, Category::class)
+            new DoctrineMappingListener(PostEntity::class, CategoryEntity::class)
         );
 
         $tool = new SchemaTool($this->em);

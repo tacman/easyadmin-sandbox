@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Tests\Fixtures;
+namespace Adeliom\EasyBlogBundle\Tests\Fixtures;
 
 use Adeliom\EasyCommonBundle\Enum\ThreeStateStatusEnum;
-use App\Entity\EasyBlog\Category;
-use App\Entity\EasyBlog\Post;
+use Adeliom\EasyBlogBundle\Entity\CategoryEntity;
+use Adeliom\EasyBlogBundle\Entity\PostEntity;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 

@@ -39,6 +39,11 @@
             "Adeliom\\EasyBlogBundle\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Adeliom\\EasyBlogBundle\\Tests\\": "tests/"
+        }
+    },
     "minimum-stability": "dev",
     "repositories": [
         {

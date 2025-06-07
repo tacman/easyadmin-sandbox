@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Tests\BlogBundle\Controller;
+namespace Adeliom\EasyBlogBundle\Tests\Controller;
 
 use Adeliom\EasyBlogBundle\Controller\PostController;
 use Adeliom\EasyBlogBundle\Event\EasyBlogCategoryEvent;
-use App\Entity\EasyBlog\Category;
-use App\Entity\EasyBlog\Post;
-use App\Tests\BlogBundle\BlogTestCase;
+use Adeliom\EasySeoBundle\Services\BreadcrumbCollection;
+use Adeliom\EasyBlogBundle\Tests\BlogTestCase;
+use Adeliom\EasyBlogBundle\Entity\CategoryEntity;
+use Adeliom\EasyBlogBundle\Entity\PostEntity;
 use Symfony\Component\DependencyInjection\Container;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\HttpFoundation\Request;
 use Twig\Environment;
 use Twig\Loader\ArrayLoader;
-use Adeliom\EasySeoBundle\Services\BreadcrumbCollection;
 
 class PostControllerTest extends BlogTestCase
 {
@@ -44,9 +44,9 @@ class PostControllerTest extends BlogTestCase
 
     public function testIndex(): void
     {
-        $registry = new \App\Tests\BlogBundle\SimpleManagerRegistry($this->em);
-        $category = $registry->getRepository(Category::class)->findOneBy(['slug' => 'cat']);
-        $post = $registry->getRepository(Post::class)->findOneBy(['slug' => 'post-1']);
+        $registry = new \Adeliom\EasyBlogBundle\Tests\SimpleManagerRegistry($this->em);
+        $category = $registry->getRepository(CategoryEntity::class)->findOneBy(['slug' => 'cat']);
+        $post = $registry->getRepository(PostEntity::class)->findOneBy(['slug' => 'post-1']);
 
         $request = new Request([], [], [
             '_easy_blog_category' => $category,

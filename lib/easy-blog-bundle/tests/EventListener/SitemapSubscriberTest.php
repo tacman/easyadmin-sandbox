@@ -1,12 +1,10 @@
 <?php
 
-namespace App\Tests\BlogBundle\EventListener;
+namespace Adeliom\EasyBlogBundle\Tests\EventListener;
 
 use Adeliom\EasyBlogBundle\EventListener\SitemapSubscriber;
-use App\Entity\EasyBlog\Category;
-use App\Entity\EasyBlog\Post;
-use App\Tests\BlogBundle\BlogTestCase;
-use App\Tests\BlogBundle\SimpleManagerRegistry;
+use Adeliom\EasyBlogBundle\Tests\BlogTestCase;
+use Adeliom\EasyBlogBundle\Tests\SimpleManagerRegistry;
 use Presta\SitemapBundle\Event\SitemapPopulateEvent;
 use Presta\SitemapBundle\Service\UrlContainerInterface;
 use Presta\SitemapBundle\Sitemap\Url\UrlConcrete;
@@ -38,8 +36,8 @@ class SitemapSubscriberTest extends BlogTestCase
 
         $subscriber = new SitemapSubscriber(
             $generator,
-            $registry->getRepository(Post::class),
-            $registry->getRepository(Category::class),
+            $registry->getRepository(\Adeliom\EasyBlogBundle\Entity\PostEntity::class),
+            $registry->getRepository(\Adeliom\EasyBlogBundle\Entity\CategoryEntity::class),
             true
         );
 
