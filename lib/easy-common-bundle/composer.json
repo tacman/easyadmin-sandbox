@@ -28,5 +28,10 @@
         "psr-4": {
             "Adeliom\\EasyCommonBundle\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\EasyCommonBundle\\Tests\\": "tests/"
+        }
     }
 }
