@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyBlockBundle\Fixtures;
+namespace Adeliom\EasyBlockBundle\Tests\Fixtures;
 
 use Adeliom\EasyBlockBundle\Block\AbstractBlock;
 use Adeliom\EasyBlockBundle\Block\BlockInterface;

@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyBlockBundle\Repository;
+namespace Adeliom\EasyBlockBundle\Tests\Repository;
 
-use App\Entity\EasyBlock\Block;
+use Adeliom\EasyBlockBundle\Tests\Fixtures\DummyBlockType;
+use Adeliom\EasyBlockBundle\Tests\Fixtures\TestBlockFixtures;
+use Adeliom\EasyBlockBundle\Entity\Block;
 use App\Repository\EasyBlock\BlockRepository;
-use App\Tests\EasyBlockBundle\Fixtures\DummyBlockType;
-use App\Tests\EasyBlockBundle\Fixtures\TestBlockFixtures;
 use Doctrine\ORM\Tools\SchemaTool;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 

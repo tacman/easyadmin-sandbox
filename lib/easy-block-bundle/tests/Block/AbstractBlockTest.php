@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyBlockBundle\Block;
+namespace Adeliom\EasyBlockBundle\Tests\Block;
 
-use App\Tests\EasyBlockBundle\Fixtures\DummyBlockType;
+use Adeliom\EasyBlockBundle\Tests\Fixtures\DummyBlockType;
 use Doctrine\ORM\EntityManagerInterface;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Form\Forms;

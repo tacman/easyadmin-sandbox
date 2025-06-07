@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyBlockBundle\Maker;
+namespace Adeliom\EasyBlockBundle\Tests\Maker;
 
 use Adeliom\EasyBlockBundle\Maker\MakeSharedBlock;
 use PHPUnit\Framework\TestCase;

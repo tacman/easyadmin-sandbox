@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyBlockBundle\Controller;
+namespace Adeliom\EasyBlockBundle\Tests\Controller;
 
 use Adeliom\EasyBlockBundle\Block\BlockCollection;
 use Adeliom\EasyBlockBundle\Controller\BlockCrudController;

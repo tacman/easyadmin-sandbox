@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyBlockBundle\DataCollector;
+namespace Adeliom\EasyBlockBundle\Tests\DataCollector;
 
 use Adeliom\EasyBlockBundle\Block\Helper;
 use Adeliom\EasyBlockBundle\DataCollector\BlockCollector;

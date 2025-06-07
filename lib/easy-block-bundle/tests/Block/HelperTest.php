@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyBlockBundle\Block;
+namespace Adeliom\EasyBlockBundle\Tests\Block;
 
 use Adeliom\EasyBlockBundle\Block\BlockCollection;
 use Adeliom\EasyBlockBundle\Block\Helper;
-use App\Tests\EasyBlockBundle\Fixtures\DummyBlockType;
-use App\Entity\EasyBlock\Block;
+use Adeliom\EasyBlockBundle\Tests\Fixtures\DummyBlockType;
+use Adeliom\EasyBlockBundle\Entity\Block;
 use Doctrine\ORM\EntityManagerInterface;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\EventDispatcher\EventDispatcher;

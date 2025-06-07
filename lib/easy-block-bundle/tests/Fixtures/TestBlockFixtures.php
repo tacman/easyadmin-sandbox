@@ -1,10 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyBlockBundle\Fixtures;
+namespace Adeliom\EasyBlockBundle\Tests\Fixtures;
 
-use App\Entity\EasyBlock\Block;
-use App\Tests\EasyBlockBundle\Fixtures\DummyBlockType;
+use Adeliom\EasyBlockBundle\Entity\Block;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 

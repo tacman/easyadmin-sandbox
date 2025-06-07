@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyBlockBundle\Event;
+namespace Adeliom\EasyBlockBundle\Tests\Event;
 
 use Adeliom\EasyBlockBundle\Event\BlockEvent;
 use Adeliom\EasyBlockBundle\Event\ParseBlockEvent;

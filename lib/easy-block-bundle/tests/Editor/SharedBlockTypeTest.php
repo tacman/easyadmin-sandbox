@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyBlockBundle\Editor;
+namespace Adeliom\EasyBlockBundle\Tests\Editor;
 
 use Adeliom\EasyBlockBundle\Editor\SharedBlockType;
-use App\Tests\EasyBlockBundle\Fixtures\DummyTranslator;
+use Adeliom\EasyBlockBundle\Tests\Fixtures\DummyTranslator;
 use Doctrine\ORM\EntityManagerInterface;
 use PHPUnit\Framework\TestCase;
 

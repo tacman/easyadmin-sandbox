@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyBlockBundle\Admin;
+namespace Adeliom\EasyBlockBundle\Tests\Admin;
 
 use Adeliom\EasyBlockBundle\Admin\Field\BlockSettingsField;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;

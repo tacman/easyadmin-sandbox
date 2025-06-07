@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyBlockBundle\Block;
+namespace Adeliom\EasyBlockBundle\Tests\Block;
 
 use Adeliom\EasyBlockBundle\Block\BlockCollection;
-use App\Tests\EasyBlockBundle\Fixtures\DummyBlockType;
+use Adeliom\EasyBlockBundle\Tests\Fixtures\AnotherDummyBlockType;
+use Adeliom\EasyBlockBundle\Tests\Fixtures\DummyBlockType;
 use Doctrine\ORM\EntityManagerInterface;
-use App\Tests\EasyBlockBundle\Fixtures\AnotherDummyBlockType;
 use PHPUnit\Framework\TestCase;
 
 class BlockCollectionTest extends TestCase
