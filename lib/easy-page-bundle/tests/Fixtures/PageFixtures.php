@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\Fixtures;
+namespace Adeliom\EasyPageBundle\Tests\Fixtures;
 
 use Adeliom\EasyCommonBundle\Enum\ThreeStateStatusEnum;
-use App\Entity\EasyPage\Page;
+use Adeliom\EasyPageBundle\Entity\Page;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 
