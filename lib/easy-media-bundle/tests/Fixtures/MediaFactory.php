@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Fixtures;
+namespace Adeliom\EasyMediaBundle\Tests\Fixtures;
 
-use Adeliom\EasyMediaBundle\Entity\Media;
 use Adeliom\EasyMediaBundle\Entity\Folder;
+use Adeliom\EasyMediaBundle\Entity\Media;
 
 final class MediaFactory
 {

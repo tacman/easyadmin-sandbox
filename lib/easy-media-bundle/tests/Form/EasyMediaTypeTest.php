@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyMediaBundle\Form;
+namespace Adeliom\EasyMediaBundle\Tests\Form;
 
 use Adeliom\EasyMediaBundle\Form\EasyMediaType;
 use Adeliom\EasyMediaBundle\Service\EasyMediaManager;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Symfony\Component\Form\Forms;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class EasyMediaTypeTest extends TestCase

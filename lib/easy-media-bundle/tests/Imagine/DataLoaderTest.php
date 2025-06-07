@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyMediaBundle\Imagine;
+namespace Adeliom\EasyMediaBundle\Tests\Imagine;
 
 use Adeliom\EasyMediaBundle\Imagine\Data\EasyMediaDataLoader;
 use League\Flysystem\FilesystemOperator;

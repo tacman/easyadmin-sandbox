@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyMediaBundle\EventListener;
+namespace Adeliom\EasyMediaBundle\Tests\EventListener;
 
 use Adeliom\EasyMediaBundle\Entity\Media;
 use Adeliom\EasyMediaBundle\EventListener\MediaSubscriber;
 use Adeliom\EasyMediaBundle\Service\EasyMediaManager;
 use Doctrine\ORM\Event\PreUpdateEventArgs;
-use Doctrine\ORM\EntityManagerInterface;
 use PHPUnit\Framework\TestCase;
 
 class MediaSubscriberTest extends TestCase

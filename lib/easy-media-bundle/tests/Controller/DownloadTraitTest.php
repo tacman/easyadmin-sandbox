@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyMediaBundle\Controller;
+namespace Adeliom\EasyMediaBundle\Tests\Controller;
 
 use Adeliom\EasyMediaBundle\Controller\Module\Download;
-use League\Flysystem\FilesystemOperator;
 use InvalidArgumentException;
+use League\Flysystem\FilesystemOperator;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\StreamedResponse;

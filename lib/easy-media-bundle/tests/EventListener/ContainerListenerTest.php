@@ -2,10 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyMediaBundle\EventListener;
+namespace Adeliom\EasyMediaBundle\Tests\EventListener;
 
 use Adeliom\EasyMediaBundle\EventListener\ContainerListener;
-use Adeliom\EasyMediaBundle\Form\EasyMediaType;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 

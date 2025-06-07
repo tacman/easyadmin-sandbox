@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyMediaBundle\Exception;
+namespace Adeliom\EasyMediaBundle\Tests\Exception;
 
 use Adeliom\EasyMediaBundle\Exception\AlreadyExist;
 use Adeliom\EasyMediaBundle\Exception\BaseException;

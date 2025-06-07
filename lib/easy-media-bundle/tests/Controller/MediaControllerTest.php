@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyMediaBundle\Controller;
+namespace Adeliom\EasyMediaBundle\Tests\Controller;
 
 use Adeliom\EasyMediaBundle\Controller\MediaController;
 use Adeliom\EasyMediaBundle\Service\EasyMediaHelper;

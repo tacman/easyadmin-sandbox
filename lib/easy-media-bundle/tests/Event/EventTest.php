@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyMediaBundle\Event;
+namespace Adeliom\EasyMediaBundle\Tests\Event;
 
 use Adeliom\EasyMediaBundle\Entity\Media;
 use Adeliom\EasyMediaBundle\Event\EasyMediaBeforeFileCreated;
@@ -12,9 +12,9 @@ use Adeliom\EasyMediaBundle\Event\EasyMediaFileMoved;
 use Adeliom\EasyMediaBundle\Event\EasyMediaFileRenamed;
 use Adeliom\EasyMediaBundle\Event\EasyMediaFileSaved;
 use Adeliom\EasyMediaBundle\Event\EasyMediaFileUploaded;
+use Adeliom\EasyMediaBundle\Event\EasyMediaGenerateAllAlt;
 use Adeliom\EasyMediaBundle\Event\EasyMediaGenerateAlt;
 use Adeliom\EasyMediaBundle\Event\EasyMediaGenerateAltGroup;
-use Adeliom\EasyMediaBundle\Event\EasyMediaGenerateAllAlt;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 

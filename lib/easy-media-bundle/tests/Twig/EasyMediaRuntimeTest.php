@@ -2,10 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyMediaBundle\Twig;
+namespace Adeliom\EasyMediaBundle\Tests\Twig;
 
 use Adeliom\EasyMediaBundle\Entity\Media;
-use Adeliom\EasyMediaBundle\Service\EasyMediaHelper;
 use Adeliom\EasyMediaBundle\Service\EasyMediaManager;
 use Adeliom\EasyMediaBundle\Twig\EasyMediaRuntime;
 use Liip\ImagineBundle\Imagine\Cache\CacheManager;

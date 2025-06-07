@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyMediaBundle\EventListener;
+namespace Adeliom\EasyMediaBundle\Tests\EventListener;
 
 use Adeliom\EasyMediaBundle\Entity\Folder;
 use Adeliom\EasyMediaBundle\Entity\Media;

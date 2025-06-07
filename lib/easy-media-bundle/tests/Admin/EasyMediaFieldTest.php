@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyMediaBundle\Admin;
+namespace Adeliom\EasyMediaBundle\Tests\Admin;
 
 use Adeliom\EasyMediaBundle\Admin\Field\EasyMediaField;
-use PHPUnit\Framework\TestCase;
 use Adeliom\EasyMediaBundle\Form\EasyMediaType;
+use PHPUnit\Framework\TestCase;
 
 class EasyMediaFieldTest extends TestCase
 {

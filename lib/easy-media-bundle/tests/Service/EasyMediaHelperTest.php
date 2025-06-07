@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyMediaBundle\Service;
+namespace Adeliom\EasyMediaBundle\Tests\Service;
 
+use;
 use Adeliom\EasyMediaBundle\Service\EasyMediaHelper;
 use Doctrine\ORM\EntityManagerInterface;
 use PHPUnit\Framework\TestCase;
