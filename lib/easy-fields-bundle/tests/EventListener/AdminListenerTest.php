@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyFieldsBundle\EventListener;
+namespace Adeliom\EasyFieldsBundle\Tests\EventListener;
 
 use Adeliom\EasyFieldsBundle\EventListener\AdminListener;
 use PHPUnit\Framework\TestCase;
@@ -26,7 +26,7 @@ class AdminListenerTest extends TestCase
         $listener = new AdminListener();
         $request = new Request(['crudAction' => 'edit', 'crudControllerFqcn' => 'App\\Controller']);
         $response = new Response();
-        $event = new ResponseEvent(new DummyKernel(), $request, HttpKernelInterface::MAIN_REQUEST, $response);
+        $event = new ResponseEvent(new \Adeliom\EasyFieldsBundle\Tests\EventListener\DummyKernel(), $request, HttpKernelInterface::MAIN_REQUEST, $response);
         $listener->onKernelResponse($event);
         $this->assertSame('edit', $response->headers->get('X-CRUD-ACTION'));
         $this->assertSame('App\\Controller', $response->headers->get('X-CRUD-CONTROLLER'));

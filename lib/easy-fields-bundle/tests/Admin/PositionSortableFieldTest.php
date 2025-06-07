@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyFieldsBundle\Admin;
+namespace Adeliom\EasyFieldsBundle\Tests\Admin;
 
 use Adeliom\EasyFieldsBundle\Admin\Field\PositionSortableField;
 use PHPUnit\Framework\TestCase;

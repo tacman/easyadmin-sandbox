@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyFieldsBundle\Traits;
+namespace Adeliom\EasyFieldsBundle\Tests\Traits;
 
 use Adeliom\EasyFieldsBundle\Traits\PositionSortableTrait;
 use PHPUnit\Framework\TestCase;
@@ -16,7 +16,7 @@ class PositionSortableTraitTest extends TestCase
 {
     public function testGetSet(): void
     {
-        $entity = new TestSortableEntity();
+        $entity = new \Adeliom\EasyFieldsBundle\Tests\Traits\TestSortableEntity();
         $entity->setLft(1);
         $entity->setLvl(2);
         $entity->setRgt(3);

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyFieldsBundle\Form;
+namespace Adeliom\EasyFieldsBundle\Tests\Form;
 
 use Adeliom\EasyFieldsBundle\Form\ChoiceMaskType;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Form\FormView;
 use Symfony\Component\Form\FormInterface;
+use Symfony\Component\Form\FormView;
 
 class ChoiceMaskTypeTest extends TestCase
 {

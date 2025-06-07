@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyFieldsBundle\Form;
+namespace Adeliom\EasyFieldsBundle\Tests\Form;
 
 use Adeliom\EasyFieldsBundle\Form\Extension\EntityTypeExtension;
-use EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator;
 use EasyCorp\Bundle\EasyAdminBundle\Contracts\Provider\AdminContextProviderInterface;
 use EasyCorp\Bundle\EasyAdminBundle\Contracts\Router\AdminRouteGeneratorInterface;
 use EasyCorp\Bundle\EasyAdminBundle\Registry\DashboardControllerRegistryInterface;
-use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+use EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
 class EntityTypeExtensionTest extends TestCase
 {

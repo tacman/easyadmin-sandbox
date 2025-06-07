@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyFieldsBundle\Admin;
+namespace Adeliom\EasyFieldsBundle\Tests\Admin;
 
 use Adeliom\EasyFieldsBundle\Admin\Field\FormTypeField;
-use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use PHPUnit\Framework\TestCase;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
 
 class FormTypeFieldTest extends TestCase
 {

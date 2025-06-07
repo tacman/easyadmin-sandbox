@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyFieldsBundle\Form;
+namespace Adeliom\EasyFieldsBundle\Tests\Form;
 
 use Adeliom\EasyFieldsBundle\Form\SortableCollectionType;
 use PHPUnit\Framework\TestCase;
