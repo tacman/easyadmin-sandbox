@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyFaq;
+namespace Adeliom\EasyFaqBundle\Tests;
 
-use App\Tests\Fixtures\FaqFixtures;
-use App\Tests\FixturesTrait;
+use Adeliom\EasyMediaBundle\Tests\Fixtures\FixturesTrait;
+use Adeliom\EasyFaqBundle\Tests\Fixtures\FaqFixtures;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class ControllerTest extends WebTestCase

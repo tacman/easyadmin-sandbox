@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\Fixtures;
+namespace Adeliom\EasyFaqBundle\Tests\Fixtures;
 
 use Adeliom\EasyCommonBundle\Enum\ThreeStateStatusEnum;
-use App\Entity\EasyFaq\Category;
-use App\Entity\EasyFaq\Entry;
+use Adeliom\EasyFaqBundle\Entity\CategoryEntity;
+use Adeliom\EasyFaqBundle\Entity\EntryEntity;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 

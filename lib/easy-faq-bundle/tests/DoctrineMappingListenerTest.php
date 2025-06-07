@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyFaq;
+namespace Adeliom\EasyFaqBundle\Tests;
 
 use Adeliom\EasyFaqBundle\EventListener\DoctrineMappingListener;
-use App\Entity\EasyFaq\Category;
-use App\Entity\EasyFaq\Entry;
-use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
+use Adeliom\EasyFaqBundle\Entity\CategoryEntity;
+use Adeliom\EasyFaqBundle\Entity\EntryEntity;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
+use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
 class DoctrineMappingListenerTest extends KernelTestCase
 {

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyFaq;
+namespace Adeliom\EasyFaqBundle\Tests\EasyFaq;
 
 use Adeliom\EasyFaqBundle\Routing\FaqCategoryLoader;
 use Adeliom\EasyFaqBundle\Routing\FaqEntryLoader;

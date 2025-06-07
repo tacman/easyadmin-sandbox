@@ -1,12 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasyFaq;
+namespace Adeliom\EasyFaqBundle\Tests;
 
 use Adeliom\EasyFaqBundle\EventListener\EntryListener;
-use App\Tests\Fixtures\FaqFixtures;
-use App\Tests\FixturesTrait;
-use Symfony\Bundle\FrameworkBundle\KernelBrowser;
+use Adeliom\EasyMediaBundle\Tests\Fixtures\FixturesTrait;
+use Adeliom\EasyFaqBundle\Tests\Fixtures\FaqFixtures;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
