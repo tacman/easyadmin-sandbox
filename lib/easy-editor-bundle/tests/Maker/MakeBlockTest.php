@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyEditorBundle\Maker;
+namespace Adeliom\EasyEditorBundle\Tests\Maker;
 
 use Adeliom\EasyEditorBundle\Maker\MakeBlock;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Console\Command\Command;
 use Symfony\Bundle\MakerBundle\InputConfiguration;
+use Symfony\Component\Console\Command\Command;
 
 final class MakeBlockTest extends TestCase
 {

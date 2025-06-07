@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyEditorBundle\Admin;
+namespace Adeliom\EasyEditorBundle\Tests\Admin;
 
 use Adeliom\EasyEditorBundle\Admin\Field\EasyEditorField;
 use PHPUnit\Framework\TestCase;

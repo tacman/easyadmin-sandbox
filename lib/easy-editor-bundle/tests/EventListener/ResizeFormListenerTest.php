@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyEditorBundle\EventListener;
+namespace Adeliom\EasyEditorBundle\Tests\EventListener;
 
 use Adeliom\EasyEditorBundle\EventListener\ResizeFormListener;
 use PHPUnit\Framework\TestCase;

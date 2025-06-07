@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyEditorBundle\Block;
+namespace Adeliom\EasyEditorBundle\Tests\Block;
 
 use Adeliom\EasyEditorBundle\Block\BlockCollection;
-use App\Tests\EasyEditorBundle\Fixtures\DummyBlock;
-use App\Tests\EasyEditorBundle\Fixtures\Entity\DummyEntity;
+use Adeliom\EasyEditorBundle\Tests\Fixtures\DummyBlock;
+use Adeliom\EasyEditorBundle\Tests\Entity\DummyEntity;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Mapping\ClassMetadata;
 use EasyCorp\Bundle\EasyAdminBundle\Dto\EntityDto;

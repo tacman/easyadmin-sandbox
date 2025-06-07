@@ -2,16 +2,15 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyEditorBundle\DataCollector;
+namespace Adeliom\EasyEditorBundle\Tests\DataCollector;
 
 use Adeliom\EasyEditorBundle\Block\BlockCollection;
 use Adeliom\EasyEditorBundle\Block\Helper;
 use Adeliom\EasyEditorBundle\DataCollector\EditorCollector;
-use App\Tests\EasyEditorBundle\Fixtures\DummyBlock;
+use Adeliom\EasyEditorBundle\Tests\Fixtures\DummyBlock;
 use Doctrine\ORM\EntityManagerInterface;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\EventDispatcher\EventDispatcher;
-use Symfony\Component\Form\FormFactory;
 use Symfony\Component\Form\Forms;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

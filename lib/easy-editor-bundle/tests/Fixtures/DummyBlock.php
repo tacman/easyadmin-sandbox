@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyEditorBundle\Fixtures;
+namespace Adeliom\EasyEditorBundle\Tests\Fixtures;
 
 use Adeliom\EasyEditorBundle\Block\AbstractBlock;
 use Doctrine\ORM\EntityManagerInterface;

@@ -2,15 +2,14 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyEditorBundle\Block;
+namespace Adeliom\EasyEditorBundle\Tests\Block;
 
 use Adeliom\EasyEditorBundle\Block\BlockCollection;
 use Adeliom\EasyEditorBundle\Block\Helper;
-use App\Tests\EasyEditorBundle\Fixtures\DummyBlock;
+use Adeliom\EasyEditorBundle\Tests\Fixtures\DummyBlock;
 use Doctrine\ORM\EntityManagerInterface;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\EventDispatcher\EventDispatcher;
-use Symfony\Component\Form\FormFactory;
 use Symfony\Component\Form\Forms;
 use Twig\Environment;
 use Twig\Loader\ArrayLoader;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\EasyEditorBundle\Twig;
+namespace Adeliom\EasyEditorBundle\Tests\Twig;
 
 use Adeliom\EasyEditorBundle\Twig\EasyBlockExtension;
 use PHPUnit\Framework\TestCase;
