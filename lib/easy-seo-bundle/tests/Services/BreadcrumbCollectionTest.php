@@ -1,8 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Tests\EasySeo\Services;
+namespace Adeliom\EasySeoBundle\Tests\Services;
 
+use;
 use Adeliom\EasySeoBundle\Services\BreadcrumbCollection;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
